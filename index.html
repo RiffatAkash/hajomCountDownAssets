@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="ad.size" content="width=300,height=250">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Countdown Banner by purplePatch</title>
+    <style>
+        @font-face {font-family:solaimanlipi;src: url(//ms.purplepatch.online/ramadan/gp/300250/solaimanlipi.woff);}
+        *{margin: 0;padding: 0;box-sizing: border-box;background-size: 100% 100%;background-repeat: no-repeat;user-select: none;}
+        .wrapper{width: 300px;height: 250px;background-image: url("assets/dualbg.gif");background-size: 300px 250px;position: relative;cursor: grab;overflow: hidden;}
+        .absolute{position: absolute;}
+        .patch_box{height: 250px;width: 300px;top: 0;left: 0;transition: all 1s ease-in-out;}
+        .patch_countdown{height: 40px;width: 200px;bottom: 70px;left: 10px;font-size: 22px;line-height: 37px;color: #fff;font-weight: 500;text-align: center;font-family: 'solaimanlipi';z-index: 2;font-weight: bold;}
+        .patch_countdown .hour{left:0;right:0;top:0;bottom:0;width:60px;height:37px;}
+        .patch_countdown .minute{left:39px;right:0;top:0;bottom:0;width:72px;height:37px;}
+        .patch_countdown .second{left:88px;right:0;top:0;bottom:0;width:60px;height:37px;}
+        .patch_title{height:20px;width:145px;background-image: url("assets/iftar.png");background-repeat: no-repeat;top:114px;left:10px;z-index: 2;}
+        .wrapper .box{left: 30px;right: 0px;width: 80px;height: 107px;}
+        .wrapper .text{left: 3px;right: 0px;top: 84px; width: 160px; height: 38px;}
+        .wrapper .timerbg{left: 5px;top: 107px;width: 160px;height: 38px;}
+        .wrapper .logo{left:10px;bottom:10px;}
+        .wrapper .product{right:10px;bottom:10px;}
+        .patch_note{height: 15px;width: 156px;bottom: 59px;left: 22px;}
+        @keyframes pulse {
+            0% {transform: scaleX(1)}
+            50% {transform: scale3d(.95, .95, .95)}
+            to {transform: scaleX(1)}
+        }
+        .pulse {animation-name: pulse;animation-duration: 2s;animation-iteration-count: infinite;}
+    </style>
+</head>
+<body>
+    <a href="//ms.purplepatch.online/ramadan/gp/deeplink.html" target="_blank">
+        <div class="wrapper">
+            <div class="patch_box absolute">
+                <div class="patch_countdown absolute">  </div>
+                <div class="patch_title absolute"></div>
+                <div class="box pulse absolute"><img src="assets/mnemonic.png" alt=""></div>
+                <div class="text absolute"><img src="assets/text.png" alt=""></div>
+                <div class="timerbg absolute"><img src="assets/timerbg.png"></div>
+                <div class="logo absolute"><img src="assets/price.png" alt=""></div>
+                <div class="product pulse absolute"><img src="assets/product.png" alt=""></div>
+                <div class="patch_note absolute"><img src="assets/condition.png" alt=""></div>
+            </div>
+        </div>
+    </a>
+<script type="text/javascript" src="pp_dhaka.js"></script>
+</body>
+</html>
