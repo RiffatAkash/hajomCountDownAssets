@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Countdown Banner by purplePatch</title>
     <style>
-        @font-face {font-family:solaimanlipi;src: url(//ms.purplepatch.online/ramadan/gp/300250/solaimanlipi.woff);}
+        /* @font-face {font-family:solaimanlipi;src: url(//ms.purplepatch.online/ramadan/gp/300250/solaimanlipi.woff);} */
         *{margin: 0;padding: 0;box-sizing: border-box;background-size: 100% 100%;background-repeat: no-repeat;user-select: none;}
-        .wrapper{width: 300px;height: 250px;background-image: url("assets/dualbg.gif");background-size: 300px 250px;position: relative;cursor: grab;overflow: hidden;}
+        .wrapper{width: 300px;height: 250px;background-image: url("assets/bg1.jpg");background-size: 300px 250px;position: relative;cursor: grab;overflow: hidden;}
         .absolute{position: absolute;}
         .patch_box{height: 250px;width: 300px;top: 0;left: 0;transition: all 1s ease-in-out;}
         .patch_countdown{height: 40px;width: 200px;bottom: 70px;left: 10px;font-size: 22px;line-height: 37px;color: #fff;font-weight: 500;text-align: center;font-family: 'solaimanlipi';z-index: 2;font-weight: bold;}
@@ -46,6 +46,26 @@
             </div>
         </div>
     </a>
+    <script>
+            const images = [
+                "assets/bg2.jpg",
+                "assets/bg1.jpg"
+            ]
+
+            console.log(images);
+
+            const wrapper = document.querySelector('.wrapper');
+            var i = 0;
+
+            setInterval(function() {
+                wrapper.style.backgroundImage = "url(" + images[i] + ")";
+                i = i + 1;
+                if (i == images.length) {
+                    i =  0;
+                }
+            }, 3000);
+        
+    </script>
 <script type="text/javascript" src="pp_dhaka.js"></script>
 </body>
 </html>
