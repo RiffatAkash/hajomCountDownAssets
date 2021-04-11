@@ -11,17 +11,17 @@
         .wrapper{width: 300px;height: 250px;background-image: url("assets/bg1.jpg");background-size: 300px 250px;position: relative;cursor: grab;overflow: hidden;}
         .absolute{position: absolute;}
         .patch_box{height: 250px;width: 300px;top: 0;left: 0;transition: all 1s ease-in-out;}
-        .patch_countdown{height: 40px;width: 200px;bottom: 70px;left: 10px;font-size: 22px;line-height: 37px;color: #fff;font-weight: 500;text-align: center;font-family: 'solaimanlipi';z-index: 2;font-weight: bold;}
+        .patch_countdown{height: 40px;width: 200px;top: 36px;left: 10px;font-size: 22px;line-height: 37px;color: #fff;font-weight: 500;text-align: center;font-family: 'solaimanlipi';z-index: 2;font-weight: bold;}
         .patch_countdown .hour{left:0;right:0;top:0;bottom:0;width:60px;height:37px;}
         .patch_countdown .minute{left:39px;right:0;top:0;bottom:0;width:72px;height:37px;}
         .patch_countdown .second{left:88px;right:0;top:0;bottom:0;width:60px;height:37px;}
-        .patch_title{height:20px;width:145px;background-image: url("assets/iftar.png");background-repeat: no-repeat;top:114px;left:10px;z-index: 2;}
-        .wrapper .box{left: 30px;right: 0px;width: 80px;height: 107px;}
-        .wrapper .text{left: 3px;right: 0px;top: 84px; width: 160px; height: 38px;}
-        .wrapper .timerbg{left: 5px;top: 107px;width: 160px;height: 38px;}
-        .wrapper .logo{left:10px;bottom:10px;}
-        .wrapper .product{right:10px;bottom:10px;}
-        .patch_note{height: 15px;width: 156px;bottom: 59px;left: 22px;}
+        .patch_title{height:20px;width:145px;background-image: url("assets/iftar.png");background-repeat: no-repeat;top:12px;left:11px;z-index: 2;}
+        .wrapper .box{left: 4px;right: 0px;width: 155px;height: 101px;top: 82px;}
+        .wrapper .text{left: 3px;right: 0px;top: 84px; width: 161px; height: 20px;}
+        .wrapper .timerbg{left: 5px;top: 5px;width: 157px;height: 84px;}
+        .wrapper .logo{left:10px;bottom:10px;height: 43px;width: 108px;}
+        .wrapper .product{left:5px;bottom:4px;height: 61px;width: 116px;}
+        .patch_note{height: 15px;width: 123px;top: 74px;left: 22px;}
         @keyframes pulse {
             0% {transform: scaleX(1)}
             50% {transform: scale3d(.95, .95, .95)}
@@ -31,38 +31,18 @@
     </style>
 </head>
 <body>
-    <a href="#" target="_blank">
+    <a href="{CLICK_MACRO}" target="_blank">
         <div class="wrapper">
             <div class="patch_box absolute">
                 <div class="patch_countdown absolute">  </div>
                 <div class="patch_title absolute"></div>
                 <div class="box pulse absolute"><img src="assets/mnemonic.png" alt=""></div>
-                <div class="text absolute"><img src="assets/text.png" alt=""></div>
                 <div class="timerbg absolute"><img src="assets/timerbg.png"></div>
-                <div class="logo absolute"><img src="assets/price.png" alt=""></div>
                 <div class="product pulse absolute"><img src="assets/product.png" alt=""></div>
                 <div class="patch_note absolute"><img src="assets/condition.png" alt=""></div>
             </div>
         </div>
     </a>
-    <script>
-            const images = [
-                "assets/bg2.jpg",
-                "assets/bg1.jpg"
-            ]
-
-            const wrapper = document.querySelector('.wrapper');
-            var i = 0;
-
-            setInterval(function() {
-                wrapper.style.backgroundImage = "url(" + images[i] + ")";
-                i = i + 1;
-                if (i == images.length) {
-                    i =  0;
-                }
-            }, 3000);
-        
-    </script>
-<script type="text/javascript" src="pp_dhaka.js"></script>
+<script type="text/javascript" src="animation.js"></script>
 </body>
 </html>
